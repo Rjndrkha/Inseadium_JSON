@@ -8,6 +8,6 @@
   },
   "dependencies": {
     "json-server": "^0.17.4",
-    "lowdb": "^6.1.1"
+    "lowdb": "^0.17.4"
   }
 }
