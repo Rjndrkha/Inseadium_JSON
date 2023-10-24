@@ -1,9 +1,261 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "password",
+      "role": "admin",
+      "subscription": {
+        "type": "null",
+        "expirationDate": "null"
+      }
+    },
+    {
+      "id": 2,
+      "username": "rajendra_premium",
+      "password": "password",
+      "role": "user",
+      "name": "Rajendra Rakha",
+      "email": "test@gmail.com",
+      "phoneNumber": "88373654",
+      "address": "Malang",
+      "subscription": {
+        "type": "Premium",
+        "expirationDate": "2024-09-20"
+      }
+    },
+    {
+      "id": 3,
+      "username": "rajendra_free",
+      "password": "password",
+      "role": "user",
+      "name": "Rajendra Rakha",
+      "email": "test@gmail.com",
+      "phoneNumber": "98283764",
+      "address": "Malang",
+      "subscription": {
+        "type": "free",
+        "expirationDate": "2023-10-20"
+      }
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "transaction": [
+    {
+      "id": 1,
+      "email": "testFree@gmail.com",
+      "userId": "3",
+      "price": 150000,
+      "type": "Yearly",
+      "subscription_type": "Premium",
+      "subscription_status": "Request",
+      "created_at": "2023-10-20"
+    },
+    {
+      "id": 2,
+      "email": "testPremium@gmail.com",
+      "userId": "2",
+      "price": 150000,
+      "type": "Yearly",
+      "subscription_type": "Premium",
+      "subscription_status": "Completed",
+      "created_at": "2023-10-20T06:31:36.192Z"
+    }
   ],
-  "profile": { "name": "typicode" }
+  "post": [
+    {
+      "id": 1,
+      "title": "Teka-teki Tanggal Pengumuman Cawapres Prabowo Subianto, Hari Ini",
+      "author": "Rajendra Rakha",
+      "post_like": 0,
+      "post_shared": 0,
+      "post_image": "http://res.cloudinary.com/dxdhypru4/image/upload/v1697770148/ekxdvextfpbpfztm4abf.webp",
+      "post_type": "Free",
+      "post_content": "SOLO - Kapan Prabowo Subianto dan Kabinet Indonesia Maju akan mengumumkan Cawapres mereka masih menjadi teka-teki. Seperti diketahui, dari tiga nama Capres yang muncul, tinggal Prabowo Subianto yang belum mengumumkan Cawapresnya. Anies Baswedan sudah lebih dulu mengumumkan Cak Imin sebagai pasangannya di Pilpres 2024 mendatang. Sementara Ganjar Pranowo resmi menggandeng Mahfud MD. Muncul rumor bahwa Prabowo dan Kabinet Indonesia Maju akan mengumumkan Cawapres mereka pada hari ini, Jumat 20 Oktober 2023.| Bahkan menurut rumor yang beredar, Erick Thohir sampai pulang ke Indonesia dari tugas negaranya di luar negeri. Akan tetapi dilansir Bisnis dari postingan terakhir Erick Thohir, Menteri BUMN tersebut semalam masih berada di Arab Saudi.|Akan tetapi dilansir Bisnis dari postingan terakhir Erick Thohir, Menteri BUMN tersebut semalam masih berada di Arab Saudi.| Erick, Zulkifli Hasan, serta Menlu Retno Marsudi tampak menghadiri pertemuan bilateral Perdana Menteri, Putra Mahkota Kerajaan Arab Saudi, Pangeran Muhammad Bin Salman dengan Presiden RI Ir. H. Joko Widodo di Istana Al-Yamamah. Pertemuan tersebut membahas 3 isu utama, antara lain: dinamika terkini yang terjadi di Palestina, pelayanan haji bagi masyarakat Indonesia, dan peningkatan perdagangan kedua negara. Rencananya, Erick mendampingi Presiden Jokowi dalam kunjungan kenegaraan ke Cina dan Arab Saudi hingga 22 Oktober mendatang. Erick Thohir memang menjadi salah satu sosok yang disebut berpotensi jadi Cawapres Prabowo Subianto. Pada Kamis, 19 Oktober 2023 malam WIB, Gibran Rakabuming Raka menulis huruf \"E\" di akun Twitternya. Banyak orang menyebut bahwa ini tanda jika Erick Thohir adalah sosok Cawapres yang akan diumumkan Prabowo dan KIM. Meski demikian, Wali Kota Solo tersebut kemudian menulis unggahan lanjutan bahwa huruf \"E\" dari postingannya sebelumnya adalah \"Es Teh\".\n",
+      "post_category": "Politic",
+      "post_read_duration": 5,
+      "post_date": "2023-10-20"
+    },
+    {
+      "id": 2,
+      "title": "Harga Pangan Hari Ini 20 Oktober: Harga Beras Tembus Rp13.270 per Kg",
+      "author": "Rajendra Rakha",
+      "post_like": 1,
+      "post_shared": 8,
+      "post_image": "http://res.cloudinary.com/dxdhypru4/image/upload/v1697770635/idbonj82lm4dsvefkrts.jpg",
+      "post_type": "Free",
+      "post_content": "JAKARTA - Mayoritas harga pangan hari ini Jumat (20/10/2023) secara rata-rata nasional di seluruh wilayah Indonesia dilaporkan naik dibandingkan hari sebelumnya. Menurut data Panel Harga Badan Pangan Nasional (Bapanas), Jumat (20/10/2023) pukul 07.29 WIB, harga beras premium naik 2,14 persen menjadi Rp15.280 per kilogram.|Harga beras medium terus bergerak menjauhi harga eceran tertinggi (HET) yang ditetapkan pemerintah sebesar Rp10.900-Rp11.800 per kilogram. Pagi ini, harga beras medium terkerek naik 0,45 persen menjadi Rp13.270 per kilogram.|Lonjakan harga juga terjadi pada komoditas pangan lainnya. Harga kedelai biji kering impor naik 2,39 persen menjadi Rp13.290 per kilogram, bawang merah menjadi Rp23.430 per kilogram, dan daging ayam ras naik 3,31 persen menjadi Rp36.470 per kilogram.|Lalu, telur ayam ras pagi ini secara rata-rata dipatok sebesar Rp28.780 per kilogram, gula konsumsi Rp15.710 per kilogram, dan minyak goreng kemasan sederhana naik 2,08 persen menjadi Rp17.700 per liter. Selain itu, harga jagung di tingkat peternak naik signifikan.",
+      "post_category": "National",
+      "post_read_duration": 5,
+      "post_date": "2023-10-20"
+    },
+    {
+      "id": 3,
+      "title": "Menakar Arah Nilai Tukar Rupiah Setelah Melemah ke Level Pandemi, Tembus Rp15.815",
+      "author": "Rajendra Rakha",
+      "post_like": 1,
+      "post_shared": 0,
+      "post_image": "http://res.cloudinary.com/dxdhypru4/image/upload/v1697770901/r8nswvjr4lwcghhdycb7.jpg",
+      "post_type": "Premium",
+      "post_content": "JAKARTA -- Nilai tukar rupiah ditutup melemah ke level Rp15.815 atas dolar Amerika Serikat pada penutupan perdagangan kemarin. Dikutip dari Bloomberg hari ini, Jumat (20/10/2023), kurs rupiah atas dolar AS ini menjadi titik pelemahan baru dalam 3 tahun terakhir. Sebelumnya, level pelemahan rupiah di atas Rp15.800 terjadi pada akhir Maret 2020 dan mencapai puncaknya pada 3 April 2020 di level Rp16.430.|Kondisi yang disebabkan oleh pandemi Covid-19 tengah memuncak untuk pertama kalinya di dunia. Setelah BI kembali mengerek bunga acuan, rupiah sempat menguat ke level Rp13.973 pada 12 Februari 2021.|Setelahnya, meski berfluktuasi, rupiah terus berada dalam tren pelemahan dan mencapai puncaknya sejauh ini pada perdagangan kemarin.\n\nPelemahan rupiah ditenggarai karena Fed Fund Rate, suku bunga acuan Bank Sentral AS, saat ini sekitar 5,25%—5,5%. Angka itu hanya beda tipis dengan BI Rate.|Sinyal kenaikan bunga oleh The Fed pun masih ada. Memang tidak dalam waktu dekat.| Namun, kode penaikan suku bunga itu dibaca serius oleh para pelaku pasar uang dan pasar modal. Pelemahan kurs rupiah, terjadi meski suku bunga acuan telah dinaikkan oleh Bank Indonesia.\n\n",
+      "post_category": "Business",
+      "post_read_duration": 5,
+      "post_date": "2023-10-20"
+    },
+    {
+      "id": 4,
+      "title": "Update Perang Hamas Vs Israel Hari Ini, Jumat",
+      "author": "Rajendra Rakha",
+      "post_like": 0,
+      "post_shared": 0,
+      "post_image": "http://res.cloudinary.com/dxdhypru4/image/upload/v1697772018/erw6gcus77gokycrzwhl.webp",
+      "post_type": "Free",
+      "post_content": "JAKARTA – Panasnya konflik antara Hamas dan Israel telah memasuki hari ke-13 sejak serangan Hamas ke Israel pada 7 Oktober 2023.|Melansir Al Jazeera, hingga Jumat (20/10/2023), sedikitnya 3.785 warga Palestina telah tewas dalam serangan Israel ke Gaza sejak serangan Hamas pada 7 Oktober lalu, yang menewaskan lebih dari 1.400 orang.|Menteri Pertahanan Israel mengatakan kepada pasukan bahwa mereka akan segera melihat Gaza \"dari dalam\", yang mengisyaratkan akan adanya invasi darat dalam waktu dekat.|Presiden AS Joe Biden membandingkan Hamas dengan Rusia dan mengatakan bahwa membawa pulang tawanan AS yang ditahan oleh Hamas dari Gaza merupakan prioritas.|AS mengatakan telah menembak jatuh rudal dan pesawat tak berawak yang ditembakkan dari Yaman, yang kemungkinan diarahkan ke Israel, dan mengonfirmasi laporan-laporan mengenai serangan-serangan ke pangkalan-pangkalan yang menampung pasukan AS di Suriah dan Irak.|Sementgara itu, Presiden Komisi Eropa mengatakan bahwa risiko konflik regional dari perang Israel-Hamas adalah risiko yang nyata.\n\n",
+      "post_category": "National",
+      "post_read_duration": 5,
+      "post_date": "2023-10-20"
+    },
+    {
+      "id": 5,
+      "title": "Google Rejected Max Howell (Creator of Homebrew) For Getting This Interview Question Wrong. Can You Solve It",
+      "author": "Rajendra Rakha",
+      "post_like": 0,
+      "post_shared": 0,
+      "post_image": "http://res.cloudinary.com/dxdhypru4/image/upload/v1697772167/ci6htujz6vmzkbx3o4ji.png",
+      "post_type": "Premium",
+      "post_content": "Max Howell, the creator of Homebrew, once interviewed for a software developer position at Google.| Despite being one of the most phenomenal developers, he was rejected by Google.The reason? — He could not solve a data structure question right.|He expressed his discontentment with Google’s interviewing process.|He also tweeted about how even Meta’s software developer interview is absolutely irrelevant to what the actual job demands.\n",
+      "post_category": "Programming",
+      "post_read_duration": 5,
+      "post_date": "2023-10-20"
+    },
+    {
+      "id": 6,
+      "title": "How Discord Stores Billions of Messages — Big Surprises in System Design",
+      "author": "Rajendra Rakha",
+      "post_like": 1,
+      "post_shared": 0,
+      "post_image": "http://res.cloudinary.com/dxdhypru4/image/upload/v1697772596/mccqxp9yfuzynt05f9na.webp",
+      "post_type": "Free",
+      "post_content": "Discord continues to grow faster than they expected and so does their user-generated content. With more users comes more chat messages. In January 2017 they announced 120 million messages a day. They decided early on to store all chat history forever so users can come back at any time and have their data available on any device.|This is a lot of data that is ever increasing in velocity, and size, and must remain available. How do they do it? Cassandra!|What are they doing?|Arguably, one of the best databases for iterating quickly is MongoDB.",
+      "post_category": "Programming",
+      "post_read_duration": 8,
+      "post_date": "2023-10-20"
+    },
+    {
+      "id": 7,
+      "title": "Harga Emas Antam Hari Ini Terus Membumbung ke Rp1,11 Juta per Gram",
+      "author": "Rajendra Rakha",
+      "post_like": 0,
+      "post_shared": 0,
+      "post_image": "http://res.cloudinary.com/dxdhypru4/image/upload/v1697772823/ejdjquaktfng14odeuvf.webp",
+      "post_type": "Premium",
+      "post_content": "JAKARTA — Harga emas 24 karat PT Aneka Tambang Tbk. (ANTM) atau Antam terpantau melanjutkan penguatannya pada hari ini Jumat, (20/10/2023).|Emas batangan Antam termurah dibanderol mulai Rp606.000 untuk ukuran terkecil.|Adapun, meningkatnya harga emas Antam seiring dengan keputusan Bank Indonesia (BI) meningkatkan suku bunga acuan ke level 6% dalam Rapat Dewan Gubernur (RDG) BI pada Kamis, (19/10/2023).|Berdasarkan informasi dari Unit Pengelolaan dan Pemurnian Logam Mulia Antam, harga emas 24 karat paling murah ukuran terkecil yaitu 0,5 gram yang dibanderol seharga Rp606.000, naik Rp6.000 dari harga pada hari sebelumnya.|Berikutnya, untuk harga emas Antam cetakan 1 gram dipatok seharga Rp1.112.000 naik Rp12.000 dari harga kemarin.|Sementara itu untuk cetakan 5 gram dihargai Rp5.335.000, naik Rp60.000 dibandingkan dengan harga sebelumnya.\n",
+      "post_category": "National",
+      "post_read_duration": 5,
+      "post_date": "2023-10-20"
+    },
+    {
+      "id": 8,
+      "title": "William Tanuwijaya Jual Saham GOTO, Andre Soelistyo Bakal Menyusul",
+      "author": "Rajendra Rakha",
+      "post_like": 0,
+      "post_shared": 0,
+      "post_image": "http://res.cloudinary.com/dxdhypru4/image/upload/v1697773235/v6jyqj9zn8l6ur72eafp.webp",
+      "post_type": "Premium",
+      "post_content": "JAKARTA - Komisaris PT GoTo Gojek Tokopedia Tbk. (GOTO) William Tanuwijaya diketahui masih dapat melakukan aksi jual pada saham GOTO miliknya.|Dalam keterbukaan informasi Bursa Efek Indonesia (BEI) Sekretaris Perusahaan GOTO RA Koesoemohadiani mengatakan William Tanuwijaya dapat memiliki rencana untuk melakukan penjualan saham sampai dengan sejumlah 3,09 miliar saham seri A GOTO atau sekitar 15 persen dari total kepemilikan saat ini di perseroan dalam jangka waktu menengah.|Koesoemohadiani mengatakan Andre Soelistyo juga dapat memiliki rencana untuk melakukan penjualan saham sampai dengan sejumlah 998,15 juta saham Seri A GOTO, sekitar 10% dari total kepemilikan sahamnya saat ini, dalam jangka waktu menengah.|Sementara itu, Direktur GOTO Melissa Siska Juminto menyatakan tidak memiliki rencana untuk menjual saham yang dimilikinya di GOTO.  Koesoemo\n\n",
+      "post_category": "Business",
+      "post_read_duration": 5,
+      "post_date": "2023-10-20"
+    }
+  ],
+  "history": [
+    {
+      "userId": "3",
+      "postId": 2,
+      "title": "Harga Pangan Hari Ini 20 Oktober: Harga Beras Tembus Rp13.270 per Kg",
+      "isLiked": false,
+      "isShared": true,
+      "id": 1
+    },
+    {
+      "userId": "3",
+      "postId": 1,
+      "title": "Teka-teki Tanggal Pengumuman Cawapres Prabowo Subianto, Hari Ini",
+      "category": "Politic",
+      "isLiked": false,
+      "lastSeen": "2023-10-22",
+      "id": 2
+    },
+    {
+      "userId": "3",
+      "postId": 6,
+      "title": "How Discord Stores Billions of Messages — Big Surprises in System Design",
+      "category": "Programming",
+      "isLiked": true,
+      "lastSeen": "2023-10-22",
+      "id": 3
+    },
+    {
+      "userId": "3",
+      "postId": 3,
+      "title": "Menakar Arah Nilai Tukar Rupiah Setelah Melemah ke Level Pandemi, Tembus Rp15.815",
+      "category": "Business",
+      "isLiked": false,
+      "lastSeen": "2023-10-22",
+      "id": 4
+    },
+    {
+      "userId": "2",
+      "postId": 3,
+      "title": "Menakar Arah Nilai Tukar Rupiah Setelah Melemah ke Level Pandemi, Tembus Rp15.815",
+      "category": "Business",
+      "isLiked": true,
+      "lastSeen": "2023-10-24",
+      "id": 5
+    },
+    {
+      "userId": "2",
+      "postId": 2,
+      "title": "Harga Pangan Hari Ini 20 Oktober: Harga Beras Tembus Rp13.270 per Kg",
+      "category": "National",
+      "isLiked": false,
+      "lastSeen": "2023-10-24",
+      "id": 6
+    },
+    {
+      "userId": "3",
+      "postId": 4,
+      "title": "Update Perang Hamas Vs Israel Hari Ini, Jumat (20/10)",
+      "category": "National",
+      "isLiked": false,
+      "lastSeen": "2023-10-22",
+      "id": 7
+    },
+    {
+      "userId": "3",
+      "postId": 5,
+      "title": "Google Rejected Max Howell (Creator of Homebrew) For Getting This Interview Question Wrong. Can You Solve It",
+      "category": "Programming",
+      "isLiked": false,
+      "lastSeen": "2023-10-22",
+      "id": 8
+    },
+    {
+      "userId": "3",
+      "postId": 7,
+      "title": "Harga Emas Antam Hari Ini Terus Membumbung ke Rp1,11 Juta per Gram",
+      "category": "National",
+      "isLiked": false,
+      "lastSeen": "2023-10-22",
+      "id": 9
+    },
+    {
+      "userId": "3",
+      "postId": 8,
+      "title": "William Tanuwijaya Jual Saham GOTO, Andre Soelistyo Bakal Menyusul",
+      "category": "Business",
+      "isLiked": false,
+      "lastSeen": "2023-10-22",
+      "id": 10
+    }
+  ]
 }
