@@ -26,7 +26,8 @@ server.use(
   })
 );
 
-// http: server.use(router);
+http: server.use(router);
+
 // server.listen(8000, () => {
 //   console.log("JSON Server is running");
 // });
