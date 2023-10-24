@@ -34,7 +34,7 @@
       "phoneNumber": "98283764",
       "address": "Malang",
       "subscription": {
-        "type": "free",
+        "type": "Free",
         "expirationDate": "2023-10-20"
       }
     }
