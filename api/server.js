@@ -1,21 +1,20 @@
+// See https://github.com/typicode/json-server#module
 const jsonServer = require("json-server");
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 
-// Gunakan adapter Memory
-const low = require("lowdb");
-const FileSync = require("lowdb/adapters/FileSync");
-const adapter = new FileSync("db.json");
-const db = low(adapter);
-
-// Atur router JSON Server untuk menggunakan database dari adapter Memory
-server.db = db;
-
 server.use(middlewares);
-server.use(router);
-
-const port = process.env.PORT || 8000;
-server.listen(port, () => {
-  console.log(`JSON Server is running on port ${port}`);
+// Add this before server.use(router)
+jsonServer.rewriter({
+  "/auth/login?username=:username&password=:password":
+    "/users?username=:username&password=:password",
+  "/auth/user/:id": "/users/:id",
 });
+server.use(router);
+server.listen(3000, () => {
+  console.log("JSON Server is running");
+});
+
+// Export the Server API
+module.exports = server;
